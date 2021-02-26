@@ -1,11 +1,26 @@
 import React from 'react';
+import Basket from './components/Basket';
+import Header from './components/Header';
+import Main from './components/Main';
+
+import data from "./data"
 
 
 
 function App() {
+  
+  const {products}=data;
+
   return (
     <div className="App">
-     <h2>Salaam</h2>
+
+
+     <Header></Header>
+
+     <div className="row">
+       <Main products={products}></Main>
+       <Basket></Basket>
+     </div>
     </div>
   );
 }
