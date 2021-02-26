@@ -1,10 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Product from "./Product";
 
-const Main = () => {
+
+const Main = ({products}) => {
     return (
         <main className="block col-2">
             <h2>Products</h2>
-            <div className="row"></div>
+            <div className="row">
+                {products.map(product => (
+                    <Product key={product.id} product={product} />
+                ))}
+            </div>
         </main>
     )
 }
