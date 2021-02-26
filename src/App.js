@@ -1,11 +1,21 @@
 import React from 'react';
+import Basket from './components/Basket';
+import Header from './components/Header';
+import Main from './components/Main';
 
 
 
 function App() {
   return (
     <div className="App">
-     <h2>Salaam</h2>
+
+      
+     <Header></Header>
+
+     <div>
+       <Main></Main>
+       <Basket></Basket>
+     </div>
     </div>
   );
 }
