@@ -9,7 +9,7 @@ const Product = ({product,onAdd}) => {
             <div>{product.price}</div>
 
             <div>
-                <button onClick={onAdd}>Add to Cart</button>
+                <button onClick={()=>onAdd(product)}>Add to Cart</button>
                 </div>
         </div>
     )
